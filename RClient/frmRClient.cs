@@ -31,7 +31,7 @@ namespace RemotableObjects
 			TcpChannel chan = new TcpChannel();
 			ChannelServices.RegisterChannel(chan);
 			// Create an instance of the remote object
-			remoteObject = (MyRemotableObject) Activator.GetObject(typeof(MyRemotableObject),"tcp://localhost:8080/HelloWorld");
+			remoteObject = (MyRemotableObject) Activator.GetObject(typeof(MyRemotableObject),"tcp://localhost:8081/HelloWorld");
 			// if remote object is on another machine the name of the machine should be used instead of localhost.
 			//************************************* TCP *************************************//
 		}

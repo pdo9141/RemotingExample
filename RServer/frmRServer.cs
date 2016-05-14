@@ -27,7 +27,7 @@ namespace RemotableObjects
 			
 			//************************************* TCP *************************************//
 			// using TCP protocol
-			TcpChannel channel = new TcpChannel(8080);
+			TcpChannel channel = new TcpChannel(8081);
 			ChannelServices.RegisterChannel(channel);
 			RemotingConfiguration.RegisterWellKnownServiceType(typeof(MyRemotableObject),"HelloWorld",WellKnownObjectMode.Singleton);
 			//************************************* TCP *************************************//
